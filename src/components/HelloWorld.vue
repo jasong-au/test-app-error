@@ -4,14 +4,14 @@ import { ref } from 'vue'
 defineProps<{ msg: string }>()
 
 // this causes the parser error on 'npm run build', but works fine with 'npm run dev'
-// console.log('import.meta.env.VITE_TEST', import.meta.env.VITE_TEST)
+ console.log('import.meta.env.VITE_TEST', import.meta.env.VITE_TEST)
 
 // this causes the same error
 // console.log("import.meta.env.VITE_TEST", import.meta.env.VITE_TEST)
 
 // this gives a different error and points out the line number
-const text = 'import.meta.env.VITE_TEST'
-console.log(text)
+// const text = 'import.meta.env.VITE_TEST'
+// console.log(text)
 
 // this works with backticks
 // console.log(`import.meta.env.VITE_TEST`, import.meta.env.VITE_TEST)
